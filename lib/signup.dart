@@ -1,5 +1,5 @@
 import 'dart:ui';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
 import 'login.dart';
@@ -14,6 +14,7 @@ class SignupPageState extends State<SignupPage> {
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
     return Scaffold(
+      appBar: AppBar(backgroundColor: Colors.pinkAccent),
       body: SafeArea(
           child: Container(
             decoration: BoxDecoration(

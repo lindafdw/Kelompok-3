@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -12,6 +11,7 @@ class LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
     return Scaffold(
+      appBar: AppBar(backgroundColor: Colors.pinkAccent),
       body: SafeArea(
           child: Container(
             decoration: BoxDecoration(

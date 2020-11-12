@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:talkit/signup.dart';
 
@@ -25,12 +24,13 @@ class AwalPageState extends State<AwalPage> {
                 Padding(
                   padding: EdgeInsets.only(top: 25),
                 ),
+                Image(image: AssetImage('assets/imgs/bg45.png'),),
                 Padding(
                   padding: EdgeInsets.only(top: 5),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Text('Welcome to', style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold)),
+                      Text('Hidup Bebas dari Masalah Pribadi,', style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
                     ],
                   ),
                 ),
@@ -39,7 +39,7 @@ class AwalPageState extends State<AwalPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Text('talk.it', style: TextStyle(color: Colors.white, fontSize: 50, fontWeight: FontWeight.bold)),
+                      Text('Tinggal Selangkah Lagi', style: TextStyle(color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold)),
                     ],
                   ),
                 ),
@@ -55,8 +55,7 @@ class AwalPageState extends State<AwalPage> {
                       padding: EdgeInsets.symmetric(horizontal: 20),
                       color: Colors.white,
                       onPressed: () {
-                        Navigator.push(
-                          context,
+                        Navigator.push(context,
                           MaterialPageRoute(builder: (context) => LoginPage()),
                         );
                       },
