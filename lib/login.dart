@@ -1,6 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 
+import 'beranda.dart';
+
 class LoginPage extends StatefulWidget {
   @override
   LoginPageState createState() => LoginPageState();
@@ -105,7 +107,11 @@ class LoginPageState extends State<LoginPage> {
                     child: FlatButton(
                       padding: EdgeInsets.symmetric(horizontal: 20),
                       color: Colors.white,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => HomePage()),
+                        );
+                      },
                       child: Text('Masuk', style: TextStyle(color: Colors.pinkAccent,fontSize: 25, fontWeight: FontWeight.bold),
                       ),
                     ),

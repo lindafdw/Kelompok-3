@@ -10,6 +10,7 @@ class SignupPage extends StatefulWidget {
 }
 
 class SignupPageState extends State<SignupPage> {
+  var isiBeranda = '';
   @override
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
@@ -44,7 +45,7 @@ class SignupPageState extends State<SignupPage> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 10),
+                  padding: EdgeInsets.only(top: 15),
                   child: Row(
                     children: <Widget>[
                       Padding(
@@ -62,6 +63,9 @@ class SignupPageState extends State<SignupPage> {
                             focusedBorder: UnderlineInputBorder(borderSide: BorderSide(color: Colors.white)),
                             border: UnderlineInputBorder(borderSide: BorderSide(color: Colors.white)),
                           ),
+                          onChanged: (s){
+                            isiBeranda = s;
+                          },
                         ),
                       ),
                       Padding(

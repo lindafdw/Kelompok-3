@@ -17,20 +17,20 @@ class AwalPageState extends State<AwalPage> {
       body: SafeArea(
           child: Container(
             decoration: BoxDecoration(
-                color: Colors.pinkAccent),
+                color: Colors.white),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Padding(
                   padding: EdgeInsets.only(top: 25),
                 ),
-                Image(image: AssetImage('assets/imgs/bg45.png'),),
+                Image(image: AssetImage('assets/imgs/bg.jpg'),),
                 Padding(
-                  padding: EdgeInsets.only(top: 5),
+                  padding: EdgeInsets.only(top: 15),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Text('Hidup Bebas dari Masalah Pribadi,', style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
+                      Text('Hidup Bebas dari Masalah Pribadi,', style: TextStyle(color: Colors.pinkAccent, fontSize: 20, fontWeight: FontWeight.bold)),
                     ],
                   ),
                 ),
@@ -39,27 +39,27 @@ class AwalPageState extends State<AwalPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Text('Tinggal Selangkah Lagi', style: TextStyle(color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold)),
+                      Text('Tinggal Selangkah Lagi', style: TextStyle(color: Colors.pinkAccent, fontSize: 30, fontWeight: FontWeight.bold)),
                     ],
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 70),
+                  padding: EdgeInsets.only(top: 50),
                 ),
                 Container(
-                  width: screenSize.width * 0.4,
-                  height: screenSize.width * 0.12,
+                  width: screenSize.width * 0.3,
+                  height: screenSize.width * 0.10,
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10),
                     child: FlatButton(
                       padding: EdgeInsets.symmetric(horizontal: 20),
-                      color: Colors.white,
+                      color: Colors.pinkAccent,
                       onPressed: () {
                         Navigator.push(context,
                           MaterialPageRoute(builder: (context) => LoginPage()),
                         );
                       },
-                      child: Text('Masuk', style: TextStyle(color: Colors.pinkAccent,fontSize: 25, fontWeight: FontWeight.bold),
+                      child: Text('Masuk', style: TextStyle(color: Colors.white,fontSize: 25, fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),
@@ -72,7 +72,7 @@ class AwalPageState extends State<AwalPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Text('atau', style: TextStyle(color: Colors.white, fontSize: 15)),
+                      Text('atau', style: TextStyle(color: Colors.black, fontSize: 15)),
                     ],
                   ),
                 ),
@@ -89,7 +89,7 @@ class AwalPageState extends State<AwalPage> {
                         MaterialPageRoute(builder: (context) => SignupPage()),
                       );
                     },
-                    child: Text('Daftar', style: TextStyle(color: Colors.white,fontSize: 20, fontWeight: FontWeight.bold),
+                    child: Text('Daftar', style: TextStyle(color: Colors.pinkAccent,fontSize: 25, fontWeight: FontWeight.bold),
                     ),
                   ),
                   padding: EdgeInsets.symmetric( horizontal: 50),
