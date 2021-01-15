@@ -1,12 +1,11 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
-
 import 'login.dart';
 
 class SignupPage extends StatefulWidget {
   @override
   SignupPageState createState() => SignupPageState();
+  static const routeName = "/SignupPage";
 }
 
 class SignupPageState extends State<SignupPage> {

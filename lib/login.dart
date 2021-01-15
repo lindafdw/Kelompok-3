@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 
-import 'beranda.dart';
+import 'home_screen.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -109,7 +109,7 @@ class LoginPageState extends State<LoginPage> {
                       color: Colors.white,
                       onPressed: () {
                         Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => HomePage()),
+                          MaterialPageRoute(builder: (context) => HomeScreen()),
                         );
                       },
                       child: Text('Masuk', style: TextStyle(color: Colors.pinkAccent,fontSize: 25, fontWeight: FontWeight.bold),

@@ -1,25 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-
+import 'package:vscode_android/awal.dart';
+import 'package:vscode_android/signup.dart';
+import 'camera.dart';
 import 'awal.dart';
+import 'home_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  var app = new MyApp();
+  runApp(app);
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(statusBarColor:  Colors.pinkAccent));
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'talk it',
-      theme: ThemeData(
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: AwalPage(),
+      title: 'talk.it',
+      // home: LoginPage(),
+      initialRoute: "/",
+      routes: {
+        "/": (context) => AwalPage(),
+        HomeScreen.routeName: (context) => HomeScreen(),
+        SignupPage.routeName: (context) => SignupPage(),
+        CameraScreen.routeName: (context) => CameraScreen()
+      },
     );
   }
 }

@@ -1,8 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:talkit/signup.dart';
-
 import 'login.dart';
+import 'package:vscode_android/signup.dart';
+
 
 class AwalPage extends StatefulWidget {
   @override
@@ -24,7 +24,7 @@ class AwalPageState extends State<AwalPage> {
                 Padding(
                   padding: EdgeInsets.only(top: 25),
                 ),
-                Image(image: AssetImage('assets/imgs/bg.jpg'),),
+                Image(image: AssetImage('assets/images/bg.jpg'),),
                 Padding(
                   padding: EdgeInsets.only(top: 15),
                   child: Row(
